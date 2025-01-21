@@ -18,5 +18,5 @@ class Solution:
             return self.findPeakElement(nums[i:])+i
    """
     time: O(logn)
-    space: O(1)
+    space: O(logn) because it's recursive, each time we halve the space under consideration
    """
