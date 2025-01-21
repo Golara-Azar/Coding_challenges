@@ -16,4 +16,7 @@ class Solution:
             return self.findPeakElement(nums[:i+1])
         else:
             return self.findPeakElement(nums[i:])+i
-        
+   """
+    time: O(logn)
+    space: O(1)
+   """
