@@ -2,7 +2,7 @@ class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
         
         """
-        time: O(mnS) where S is the length of word
+        time: O(mn * 3^S) where S is the length of word, 3 because of the 3 directions we need to explore since one of the 4 will return in O(1)
         space: O(S) since the recursion happens S times
         
         """
