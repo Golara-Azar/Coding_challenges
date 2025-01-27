@@ -2,7 +2,7 @@ class Solution:
     def trailingZeroes(self, n: int) -> int:
         
         
-        def count_fives(m):
+        def count_fives(m): #O(1), most numbers only have 1 five
             total = 0
             if m<5:
                 return 0
@@ -13,7 +13,7 @@ class Solution:
         
         
         fives = 0
-        for i in range(5,n+1,5):
+        for i in range(5,n+1,5): #O(n)
             fives += count_fives(i)
                 
         
