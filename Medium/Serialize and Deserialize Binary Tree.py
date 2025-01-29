@@ -12,6 +12,9 @@ class Codec:
         
         :type root: TreeNode
         :rtype: str
+
+        O(n) time for recursion on all nodes
+        O(n) to keep the tree nodes in string
         """
         res = ""
         if root is None:
@@ -30,6 +33,9 @@ class Codec:
         
         :type data: str
         :rtype: TreeNode
+
+        O(n) time to traverse the list
+        O(n) space to keep each node value in the list and the stack
         """
         
         if len(data_str)<=1:
@@ -72,7 +78,7 @@ class Codec:
             
             i+=1
             if i==len(data):
-                    print(dummy)
+                    
                     return dummy
             
             
